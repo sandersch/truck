@@ -19,6 +19,7 @@ end
 group :development do
   gem 'haml-rails'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 gem 'jquery-rails'
