@@ -19,6 +19,9 @@ group :development do
   gem 'haml-rails'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'vcr'
+  gem 'fakeweb'
 end
 
 gem 'jquery-rails'
+gem 'twitter'
