@@ -21,6 +21,7 @@ group :development do
   gem 'guard-rspec'
   gem 'vcr'
   gem 'fakeweb'
+  gem 'pry-rails'
 end
 
 group :test do

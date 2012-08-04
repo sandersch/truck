@@ -57,3 +57,13 @@ module Truck
     config.assets.version = '1.0'
   end
 end
+
+require 'active_support/concern'
+require 'mongoid/document'
+module Persistable
+  extend ActiveSupport::Concern
+  included do
+    include Mongoid::Document
+  end
+end
+
