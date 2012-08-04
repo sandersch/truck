@@ -23,5 +23,9 @@ group :development do
   gem 'fakeweb'
 end
 
+group :test do
+  gem 'factory_girl_rails'
+end
+
 gem 'jquery-rails'
 gem 'twitter'

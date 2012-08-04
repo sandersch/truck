@@ -28,4 +28,10 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.before(:each) do
+    Mongoid.default_session.collections.each do |collection|
+      collection.drop unless collection.name =~ /^system[.]/
+    end
+  end
 end
